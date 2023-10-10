@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h1>{{question.question}}</h1>
+<h2>{{question.question}}</h2>
 <form action="/answers" method="POST">
     {% for choice in question.choices %}
     <p><input type="radio" name="answer" value="{{choice}}">{{choice}}</p>
